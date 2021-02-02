@@ -6,7 +6,7 @@ platform:
 
 steps:
   - name: build
-    image: debian: latest
+    image: debian:latest
     commands:
       - apt-get update -y && apt-get install -y autoconf bsdtar 
       #TOMLC89
@@ -31,7 +31,7 @@ platform:
 
 steps:
   - name: build
-    image: debian: latest
+    image: debian:latest
     commands:
       - apt-get update -y && apt-get install -y autoconf bsdtar 
       #TOMLC89
