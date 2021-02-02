@@ -1,0 +1,48 @@
+kind: pipeline
+type: docker
+name: AMD64_Debian_ppkg
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: debian: latest
+    commands:
+      - apt-get update -y && apt-get install -y autoconf bsdtar 
+      #TOMLC89
+      - git clone https://git.magnatox.com/tonymmm1/tomlc89.git
+      - cd tomlc89
+      - make
+      - make install
+      #ppkg
+      - cd ..
+      - chmod +x autogen.sh && ./autogen.sh
+      - ./configure
+      - make
+      - ./ppkg -v
+      - ./ppkg -h
+
+---
+kind: pipeline
+type: docker
+name: ARM64_Debian_ppkg
+platform:
+  arch: arm64
+
+steps:
+  - name: build
+    image: debian: latest
+    commands:
+      - apt-get update -y && apt-get install -y autoconf bsdtar 
+      #TOMLC89
+      - git clone https://git.magnatox.com/tonymmm1/tomlc89.git
+      - cd tomlc89
+      - make
+      - make install
+      #ppkg
+      - cd ..
+      - chmod +x autogen.sh && ./autogen.sh
+      - ./configure
+      - make
+      - ./ppkg -v
+      - ./ppkg -h
