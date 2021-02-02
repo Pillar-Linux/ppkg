@@ -1,4 +1,4 @@
-#Example package .conf file 
+# Example package .conf file 
 
 The following includes a TOML template for configuring packages.
 
