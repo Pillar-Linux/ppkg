@@ -1,3 +1,5 @@
+[![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/drone)](https://drone.magnatox.com/pillar-linux/ppkg)
+
 # Pillar package-script(ppkg)
 
 ## Release: 0.1.0
