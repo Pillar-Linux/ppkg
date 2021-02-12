@@ -20,8 +20,8 @@ steps:
       - cd build
       - cmake ..
       - make
-      - ./ppkg -v
-      - ./ppkg -h
+      - ./bin/ppkg -v
+      - ./bin/ppkg -h
 
 ---
 kind: pipeline
@@ -46,5 +46,5 @@ steps:
       - cd build
       - cmake ..
       - make
-      - ./ppkg -v
-      - ./ppkg -h
+      - ./bin/ppkg -v
+      - ./bin/ppkg -h
