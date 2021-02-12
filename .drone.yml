@@ -8,7 +8,7 @@ steps:
   - name: build
     image: debian:latest
     commands:
-      - apt-get update -y && apt-get install -y cmake bsdtar git make gcc
+      - apt-get update -y && apt-get install -y cmake bsdtar git make gcc subversion
       #TOMLC89
       - git clone https://git.magnatox.com/tonymmm1/tomlc89.git
       - cd tomlc89
@@ -34,7 +34,7 @@ steps:
   - name: build
     image: debian:latest
     commands:
-      - apt-get update -y && apt-get install -y cmake bsdtar git make gcc
+      - apt-get update -y && apt-get install -y cmake bsdtar git make gcc subversion
       #TOMLC89
       - git clone https://git.magnatox.com/tonymmm1/tomlc89.git
       - cd tomlc89
