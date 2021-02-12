@@ -32,6 +32,16 @@ make
 make install
 ```
 
+CMake:
+
+```
+mkdir build
+cd build
+cmake ..
+make
+make install
+```
+
 ## Usage
 
 ```
