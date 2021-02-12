@@ -8,7 +8,7 @@ steps:
   - name: build
     image: debian:latest
     commands:
-      - apt-get update -y && apt-get install -y autoconf bsdtar git make gcc
+      - apt-get update -y && apt-get install -y cmake bsdtar git make gcc
       #TOMLC89
       - git clone https://git.magnatox.com/tonymmm1/tomlc89.git
       - cd tomlc89
@@ -16,8 +16,9 @@ steps:
       - make install
       #ppkg
       - cd ..
-      - chmod +x autogen.sh && ./autogen.sh
-      - ./configure
+      - mkdir build
+      - cd build
+      - cmake ..
       - make
       - ./ppkg -v
       - ./ppkg -h
@@ -33,7 +34,7 @@ steps:
   - name: build
     image: debian:latest
     commands:
-      - apt-get update -y && apt-get install -y autoconf bsdtar git make gcc
+      - apt-get update -y && apt-get install -y cmake bsdtar git make gcc
       #TOMLC89
       - git clone https://git.magnatox.com/tonymmm1/tomlc89.git
       - cd tomlc89
@@ -41,8 +42,9 @@ steps:
       - make install
       #ppkg
       - cd ..
-      - chmod +x autogen.sh && ./autogen.sh
-      - ./configure
+      - mkdir build
+      - cd build
+      - cmake ..
       - make
       - ./ppkg -v
       - ./ppkg -h
