@@ -1,5 +1,5 @@
-| Branches: |
-| :--   |
+| Branches: | |
+| :--   | |
 | Master|[![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/master)](https://drone.magnatox.com/pillar-linux/ppkg)|
 | Autoconf |[![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/autoconf)](https://drone.magnatox.com/pillar-linux/ppkg)|
 
