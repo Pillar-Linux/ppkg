@@ -1,8 +1,13 @@
-[![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/drone)](https://drone.magnatox.com/pillar-linux/ppkg)
+| Branches: | :smiley: |
+| :--       | :----:   |
+| [Master](https://git.magnatox.com/pillar-linux/ppkg/src/branch/master) | [![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/master)](https://drone.magnatox.com/pillar-linux/ppkg) |
+| [Autoconf](https://git.magnatox.com/pillar-linux/ppkg/src/branch/autoconf) | [![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/autoconf)](https://drone.magnatox.com/pillar-linux/ppkg) |
 
 # Pillar package-script(ppkg)
 
 ## Release: 0.1.0
+
+## Branch: Master
 
 ### Tony Martinez 2021
 
@@ -21,16 +26,6 @@ This program will handle compiling/building packages from a TOML configuration f
 - [program config](docs/package-example.md)
 
 ## Build instructions
-
-Autoconf:
-
-```
-chmod +x autogen.sh
-./autogen.sh
-./configure
-make
-make install
-```
 
 CMake:
 
