@@ -1,8 +1,10 @@
-[![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/drone)](https://drone.magnatox.com/pillar-linux/ppkg)
+[![Build Status](https://drone.magnatox.com/api/badges/pillar-linux/ppkg/status.svg?ref=refs/heads/autoconf)](https://drone.magnatox.com/pillar-linux/ppkg)
 
-# Pillar package-script(ppkg)
+# Pillar package-script(ppkg) 
 
 ## Release: 0.1.0
+
+## Branch: Autoconf
 
 ### Tony Martinez 2021
 
@@ -28,16 +30,6 @@ Autoconf:
 chmod +x autogen.sh
 ./autogen.sh
 ./configure
-make
-make install
-```
-
-CMake:
-
-```
-mkdir build
-cd build
-cmake ..
 make
 make install
 ```
